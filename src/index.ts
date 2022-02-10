@@ -12,7 +12,7 @@ export class NoTrustKeysProviderError extends Error {
   public constructor() {
     super();
     this.name = this.constructor.name;
-    this.message = "No BSC provider was found on window.TkProvider.";
+    this.message = "No TrustKeys provider was found on window.TkProvider.";
   }
 }
 

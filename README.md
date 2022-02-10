@@ -1,1 +1,1 @@
-@web3-react/trustkeys-connector
+@trustkeys/trustkeys-connector

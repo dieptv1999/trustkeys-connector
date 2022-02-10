@@ -29,6 +29,7 @@
     "dist"
   ],
   "scripts": {
+    "prepublish": "npm run build",
     "start": "tsdx watch",
     "build": "tsdx build",
     "lint": "tsdx lint src",

@@ -1,5 +1,5 @@
 {
-  "name": "trustkeys-connector",
+  "name": "@trustkeys-connector",
   "publishConfig": {
     "access": "public"
   },

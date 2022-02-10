@@ -1,38 +1,48 @@
 {
   "name": "trustkeys-connector",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.16.2",
-    "@testing-library/react": "^12.1.2",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "5.0.0",
-    "web-vitals": "^2.1.4"
+  "publishConfig": {
+    "access": "public"
   },
+  "version": "1.0.3",
+  "description": "A simple, maximally extensible, dependency minimized framework for building modern TrustKeys dApps",
+  "keywords": [
+    "react",
+    "hooks",
+    "ethereum",
+    "javascript",
+    "typescript",
+    "web3",
+    "context",
+    "frontend",
+    "dapp",
+    "metamask",
+    "trustkeys"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/binance-chain-npm/bsc-web3-connector.git"
+  },
+  "main": "dist/index.js",
+  "module": "dist/web3-connector.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "lint": "tsdx lint src",
+    "semantic-release": "semantic-release"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "dependencies": {
+    "@web3-react/abstract-connector": "^6.0.7",
+    "@web3-react/types": "^6.0.7",
+    "tiny-warning": "^1.0.3"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "semantic-release": "^17.2.2",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.0.3"
   }
 }
